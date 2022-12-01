@@ -23,16 +23,17 @@ const navbar = () => {
   return (
     <div ref={animationParent} className='z-10 sticky top-0'>
       <nav className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-around h-16 max-sm:justify-between max-md:justify-between">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row justify-between">
+        <div className="flex-shrink-0">
                 <Link href="/"><img ref={el => logo = el} src='/images/logolight.png'
-                  className="opacity-0 max-h-12 max-w-24"
+                  className="opacity-0 max-h-16 max-w-24"
                   
                   alt="Workflow"
                 /></Link>
-              </div>
+          </div>
+          <div className="flex items-center justify-center h-16 max-sm:justify-between max-md:justify-between">
+            <div className="flex items-center">
+
               <div className="hidden md:block">
                 <div className="ml-10 flex justify-center items-center space-x-4">
                 <Link
