@@ -28,7 +28,7 @@ const navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <Link href="/"><img ref={el => logo = el} src='/images/logolight.png'
-                  className="opacity-0 h-12 w-full"
+                  className="opacity-0 max-h-12 max-w-24"
                   
                   alt="Workflow"
                 /></Link>
