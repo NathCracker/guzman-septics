@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'guzmans-bg': "url('/images/guzmansepticbackground.jpg')",
-        'septic-cleaning': "url('../img/SepticCleaning.jpg')",
+        'septic-cleaning': "url('/images/SepticCleaning.jpg')",
       }
     },
     fontFamily:{
