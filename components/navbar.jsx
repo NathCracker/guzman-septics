@@ -14,8 +14,8 @@ const navbar = () => {
   const navs = gsap.utils.toArray('.linking');
   navs.forEach(nav => {
     gsap.fromTo(nav, { opacity:0, scale: 0.5}, {scale: 1, opacity: 1, duration: 1, ease: ease})
-    })
-    gsap.fromTo(logo, {opacity: 0, scale:0.5}, {opacity: 1, scale:1, ease: ease, duration: 1})
+    });
+    gsap.fromTo(logo, {opacity: 0, scale:0.5}, {opacity: 1, scale:1, ease: ease, duration: 1});
   }, [])
 
   const [isOpen, setIsOpen] = useState(false);
@@ -39,34 +39,50 @@ const navbar = () => {
                 <Link
                     href="/"
                     
-                    className="linking hover:underline underline-offset-8 text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-white"
+                    className="group linking text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-white"
                   >
                     Home
+
+                    <div className='animationing bg-white w-0 h-[3px] transition-all group-hover:w-full'>
+
+                    </div>
                   </Link>
 
                   <Links
                     href="#"
                     activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={500}
-                    className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="group linking text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Services
+                    
+                    <div className='animationing bg-white w-0 h-[3px] transition-all group-hover:w-full'>
+
+                    </div>
                   </Links>
 
                   <Links
                     href="#"
                     activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500}
-                    className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="group linking text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Abouts
+                    About
+                    
+                    <div className='animationing bg-white w-0 h-[3px] transition-all group-hover:w-full'>
+
+                    </div>
                   </Links>
 
                   <Links
                     href="#"
                     activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500}
-                    className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="group linking text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     
                     Contacts
+                    
+                    <div className='animationing bg-white w-0 h-[3px] transition-all group-hover:w-full'>
+
+                    </div>
                   </Links>
 
                 </div>

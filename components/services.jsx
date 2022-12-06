@@ -3,7 +3,6 @@ import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import offertable from './serviceoffers';
 import gsap from 'gsap';
-import Power3 from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 const services = () => {
@@ -33,6 +32,8 @@ const services = () => {
   }, []);
 
   return (
+    <>
+    
     <div className='bg-gradient-to-bl from-gray-100 to-white font-custom text-center w-full max-h-full flex flex-col items-center' id='services'>
         <h1 className='text-5xl pt-10 font-lobster' ref={h1Text}>Our Services</h1>
         <div className='flex justify-around items-center gap-5 py-10 max-sm:flex-wrap max-sm:gap-5 max-md:flex-wrap lg:flex-wrap max-lg:flex-wrap w-8/12'>
@@ -48,6 +49,7 @@ const services = () => {
             ))}
         </div>  
     </div>
+    </>
   )
 }
 

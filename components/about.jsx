@@ -2,6 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import {gsap} from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import {IoLocationSharp} from 'react-icons/io5'
+import {Link as Links} from 'react-scroll'
 gsap.registerPlugin(ScrollTrigger);
 const about = () => {
   const title = useRef(null);
@@ -51,7 +52,8 @@ const about = () => {
               </div>
             </div>
             <div ref={description} className='max-w-lg text-justify max-sm:w-11/12 max-md:w-full '>
-                <p className='my-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint soluta, laboriosam voluptatibus eligendi quaerat explicabo modi repellat animi pariatur sapiente quod doloremque, fugiat in ex? Amet eos, in dolor quisquam blanditiis incidunt veritatis reiciendis iusto doloribus consequuntur, unde, quaerat necessitatibus voluptatum! Dolor eos quas, quos quaerat illum neque sint.</p>
+                <p className='my-2'>We are a Houston, Texas-based septic firm that provides commercial and residential services in Houston and its surrounding locations. Our company has been in business for ten years, offering quality septic services to businesses and homeowners in Houston. You can learn more about our <Links  href="#"
+                  activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={500} className='text-blue-600 font-bold'>services</Links> and view our gallery by clicking on the cards above.</p>
             </div>
         </div>
         <div  ref={map} className=' flex flex-col justify-center max-sm:text-center max-w-[600px] max-h-[600px] max-sm:w-full max-md:w-full max-lg:w-[600px]'>

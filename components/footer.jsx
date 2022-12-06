@@ -27,7 +27,7 @@ const footer = () => {
   <div className='text-center'>
     <p className=' text-white text-lg pb-5'>© 2022 Guzman Septic™ is a registered trademark. All Rights Reserved.</p>
   </div>
-  <ScrollToTop smooth top='20' color="#FFFFFF" width='40' className='!bg-slate-900 toUp transition-all rounded-full hover:rotate-[360deg] duration-700' />
+  <ScrollToTop smooth top='20' color="#FFFFFF" width='40' className='!bg-slate-900 toUp opacity-60 transition-all hover:opacity-100 duration-200' />
 </div>
   )
 }
