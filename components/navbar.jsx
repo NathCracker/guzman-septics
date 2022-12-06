@@ -49,10 +49,11 @@ const navbar = () => {
                     </div>
                   </Link>
 
+                  <div className='flex flex-col overflow-hidden justify-center items-center h-full group'>
                   <Links
                     href="#"
                     activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={500}
-                    className="group linking text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" linking text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Services
                     
@@ -60,12 +61,15 @@ const navbar = () => {
 
                     </div>
 
-                    <div className='absolute top-12 bg-gray-800 flex flex-col opacity-0 transition-all duration-500 group-hover:opacity-100 w-[200px]'>
-                        {offertable.map((table) =>(
-                          <Link href={table.link} className='py-2 transition-all text-left hover:bg-gray-900'>{table.title}</Link>
-                        ))}
-                    </div>
                   </Links>
+
+                  <div className=' absolute top-12 text-white bg-gray-800 hidden flex-col opacity-0 w-[200px] group-hover:flex group-hover:opacity-100'>
+                        {offertable.map((table) =>(
+                          <a href={table.link} className='py-2 transition-all text-left hover:text-red-500'>{table.title}</a>
+                        ))}
+                  </div>
+
+                  </div>
 
                   <Links
                     href="#"

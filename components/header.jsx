@@ -11,7 +11,7 @@ const header = () => {
     }});
   })
   return (
-    <div className='text-center font-lobster tracking-widest'>
+    <div className=' text-center font-lobster tracking-widest'>
       <div className='max-w-full min-h-screen flex items-center justify-center '>
         <div className='w-full h-full object-cover absolute bg-guzmans-bg bg-fixed bg-cover brightness-50' alt="Picture of our trucks" ></div>
         <h1 ref={headering} className=' font-thin opacity-0 max-sm:text-center max-md:text-center text-5xl text-white'>Best Septic Service in Houston, Texas</h1>
