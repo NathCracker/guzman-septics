@@ -63,7 +63,7 @@ const navbar = () => {
 
                   </Links>
 
-                  <div className='overflow-hidden absolute top-16 text-white bg-gray-800 flex flex-col invisible opacity-0 transition-all duration-500 -translate-y-10 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100  w-[200px]'>
+                  <div className='overflow-hidden absolute top-16 text-white bg-gray-800 flex flex-col invisible opacity-0 transition-all duration-500 scale-50 group-hover:scale-100 group-hover:visible group-hover:opacity-100  w-[200px]'>
                         {offertable.map((table) =>(
                           <a href={table.link} className='p-2 transition-all text-left hover:bg-gray-900'>{table.title}</a>
                         ))}
