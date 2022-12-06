@@ -36,9 +36,9 @@ const services = () => {
     
     <div className='bg-gradient-to-bl from-gray-100 to-white font-custom text-center w-full max-h-full flex flex-col items-center' id='services'>
         <h1 className='text-5xl pt-10 font-lobster' ref={h1Text}>Our Services</h1>
-        <div className='flex justify-around items-center gap-5 py-10 max-sm:flex-wrap max-sm:gap-5 max-md:flex-wrap lg:flex-wrap max-lg:flex-wrap w-8/12'>
+        <div className='flex justify-around items-center gap-5 py-10 max-sm:flex-wrap max-sm:gap-5 max-md:flex-wrap lg:flex-wrap max-lg:flex-wrap max-sm:w-full w-10/12 max-md:w-full'>
             {offertable.map((table) => (
-                <div className='cards bg-white justify-start w-60 p-3 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl max-sm:w-11/12 max-md:w-2/6 max-md:m-5 max-lg:w-2/6 max-lg:m-5 lg:m-5 '>
+                <div className='cards bg-white justify-start w-60 p-3 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl max-sm:w-full max-md:w-2/6 max-md:m-5 max-lg:w-2/6 max-lg:m-5 lg:m-5 min-w-[200px]'>
                 <img className='w-full h-52 m-0 p-1 object-cover rounded-xl' src={table.url} alt="" />
                 <div className='flex justify-end flex-col items-start'>
                     <h1 className='text-xl font-bold py-1'>{table.title}</h1>

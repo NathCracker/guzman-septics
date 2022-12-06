@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {Link as Links} from 'react-scroll'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 import {gsap, Power3} from 'gsap'
+import offertable from './serviceoffers'
 
 const navbar = () => {
   let ease = Power3.easeInOut();
@@ -57,6 +58,12 @@ const navbar = () => {
                     
                     <div className='animationing bg-white w-0 h-[3px] transition-all group-hover:w-full'>
 
+                    </div>
+
+                    <div className='absolute top-12 bg-gray-800 flex flex-col opacity-0 transition-all duration-500 group-hover:opacity-100 w-[200px]'>
+                        {offertable.map((table) =>(
+                          <Link href={table.link} className='py-2 transition-all text-left hover:bg-gray-900'>{table.title}</Link>
+                        ))}
                     </div>
                   </Links>
 
