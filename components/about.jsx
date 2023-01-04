@@ -35,7 +35,7 @@ const about = () => {
   })
   return (
     <div className='flex flex-row justify-around w-full'>
-      <div className=' w-4/5 bg-gradient-to-br from-gray-100 to-white font-custom flex justify-around snap-y  snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
+      <div className=' w-4/5 bg-white font-custom flex justify-around snap-y  snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
           <div className='text-center flex flex-col items-center snap-start max-sm:mb-10 gap-10'>
               <h1 ref={title} className='text-3xl py-5 font-lobster'>About us</h1>
               <div className='flex flex-row justify-between items-center gap-16'>

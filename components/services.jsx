@@ -34,7 +34,7 @@ const services = () => {
   return (
     <>
     <div className='flex flex-row justify-around'>
-      <div className=' bg-gradient-to-bl from-gray-100 to-white font-custom text-center w-8/12 max-h-full flex flex-col items-center' id='services'>
+      <div className=' bg-white font-custom text-center w-8/12 max-h-full flex flex-col items-center' id='services'>
           <h1 className='text-5xl pt-10 font-lobster' ref={h1Text}>Our Services</h1>
           <div className='flex justify-around items-center gap-5 py-10 max-sm:flex-wrap max-sm:gap-5 max-md:flex-wrap lg:flex-wrap max-lg:flex-wrap max-sm:w-full w-10/12 max-md:w-full'>
               {offertable.map((table) => (
