@@ -22,7 +22,7 @@ const navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [animationParent] = useAutoAnimate();
   return (
-    <div ref={animationParent} className='z-10 sticky top-0'>
+    <div ref={animationParent} className='z-10 sticky top-0' lang='en'>
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row justify-between">
         <div className="flex-shrink-0">

@@ -61,12 +61,12 @@ const about = () => {
           </div>
           <div  ref={map} className=' flex flex-col justify-center max-sm:text-center max-sm:w-full max-md:w-full max-lg:w-[600px] my-0'>
             <p className='font-lobster text-3xl text-center max-sm:hidden max-md:hidden py-12'>Location</p>
-            <iframe className='lg:hidden  py-2 max-sm:w-full' title='mapFrame' width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%2017914%20E%20Hardy%20Rd,%20North%20Houston,%20TX,%20United%20States,%20Texas&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe  title='mapFrame' className='lg:hidden  py-2 max-sm:w-full' width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%2017914%20E%20Hardy%20Rd,%20North%20Houston,%20TX,%20United%20States,%20Texas&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             <div className='flex flex-row text-center justify-center items-center my-5'>
               <IoLocationSharp className='text-2xl -translate-y-2 max-sm:-translate-y-6' />
               <p className='text-xl max-sm:pb-10 max-sm:text-xl'> 17914 E Hardy Rd, Houston, TX 77073, USA</p>
             </div> 
-           <iframe className='max-sm:hidden max-md:hidden max-lg:hidden max-sm:w-full' title='mapFrame' width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%2017914%20E%20Hardy%20Rd,%20North%20Houston,%20TX,%20United%20States,%20Texas&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+           <iframe  title='mapFrame' className='max-sm:hidden max-md:hidden max-lg:hidden max-sm:w-full' width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%2017914%20E%20Hardy%20Rd,%20North%20Houston,%20TX,%20United%20States,%20Texas&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
       </div>
     </div>
