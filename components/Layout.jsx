@@ -2,13 +2,12 @@ import React from 'react'
 import Navbar from './navbar'
 import Hotline from './hotline'
 import Footer from './footer'
-const Layout = ({ children, pageMeta }) => {
+const Layout = ({ children }) => {
 
   const meta = {
     title: 'The Best Septice Service in Houston',
     description: 'Your Trusted Septic Partner',
-    type: 'website',
-    ...pageMeta
+    type: 'website'
   };
 
   return (
