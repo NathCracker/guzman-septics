@@ -124,7 +124,7 @@ const contacts = () => {
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="phone" className='text-black'>Phone Number</label>
-              <input onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='01111111111' max='99999999999' id="phone" />
+              <input onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='0' max='99999999999' id="phone" />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="address" className='text-black'>Address</label>
