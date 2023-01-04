@@ -99,54 +99,55 @@ const contacts = () => {
   };
 //<a href="https://www.flaticon.com/free-icons/customer-service" title="customer service icons">Customer service icons created by Freepik - Flaticon</a>
   return (
-    
-    <div ref={contacts} className=' bg-white pt-10 pb-5 mt-10 font-custom' id='contacts'>
-      <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
-        <div className='flex flex-col gap-5 text-center'>
-          <h1 className='text-black text-5xl max-sm:text-center font-lobster'>Connect with us</h1>
-          <p className='text-black  max-sm:text-center'>Feel free to contact us using this form or by calling our hotline.</p>
-          <div className='offer flex justify-center items-center flex-col gap-5'>
-                <img src="/images/ico/call-center.png" alt="Commercial" className='max-h-28' />
-                <div className='flex justify-center items-center'><BsFillTelephoneFill className='text-4xl max-sm:text-lg' /><p className='px-2 max-sm:text-lg text-3xl'>+1 281-642-2355</p></div>
-                <h2 className='max-sm:pb-10'>Our customer service is open for 24 hours.</h2>
-                <h1 className='font-lobster text-3xl lg:hidden pb-5'>Contact Form</h1>
+    <div className='flex flex-row justify-around'>
+      <div ref={contacts} className='w-10/12 bg-white pt-10 pb-5 mt-10 font-custom' id='contacts'>
+        <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
+          <div className='flex flex-col gap-5 text-center'>
+            <h1 className='text-black text-5xl max-sm:text-center font-lobster'>Connect with us</h1>
+            <p className='text-black  max-sm:text-center'>Feel free to contact us using this form or by calling our hotline.</p>
+            <div className='offer flex justify-center items-center flex-col gap-5'>
+                  <img src="/images/ico/call-center.png" alt="Commercial" className='max-h-28' />
+                  <div className='flex justify-center items-center'><BsFillTelephoneFill className='text-4xl max-sm:text-lg' /><p className='px-2 max-sm:text-lg text-3xl'>+1 281-642-2355</p></div>
+                  <h2 className='max-sm:pb-10'>Our customer service is open for 24 hours.</h2>
+                  <h1 className='font-lobster text-3xl lg:hidden pb-5'>Contact Form</h1>
+            </div>
           </div>
+          <form ref={form} onSubmit={sendEmail} action="" className=' flex justify-center items-center flex-col gap-5 px-4 my-auto w-[50%] max-w-full mx-auto max-sm:w-full max-md:w-full max-lg:w-full'>
+            <div className='flex gap-1 flex-col justify-start w-full max-sm:w-full max-md:w-full max-lg:w-full'>
+              <label htmlFor="name" className=' text-black'>Name</label>
+              <input onChange={e=>setName(e.target.value)} className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' 
+              name='from_name' type="text"  />
+            </div>
+            <div className='flex gap-1 flex-col justify-start w-full'>
+              <label htmlFor="email" className='text-black'>Email</label>
+              <input onChange={e=>setEmail(e.target.value)} name='from_email' className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="email" id="email" />
+            </div>
+            <div className='flex gap-1 flex-col justify-start w-full'>
+              <label htmlFor="phone" className='text-black'>Phone Number</label>
+              <input onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='01111111111' max='99999999999' id="phone" />
+            </div>
+            <div className='flex gap-1 flex-col justify-start w-full'>
+              <label htmlFor="address" className='text-black'>Address</label>
+              <input onChange={e=>setAddress(e.target.value)} name='from_address' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="text" id="address" />
+            </div>
+            <div className='flex gap-1 flex-col justify-start w-full'>
+              <label htmlFor="address" className='text-black'>Service</label>
+              <select name="from_select" id="select" className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1'>
+                <option value="Cleaning and Pumping">Septic Cleaning and Pumping</option>
+                <option value="Installation">Septic Tank Installation</option>
+                <option value="Control Panels">Septic Control Panel</option>
+                <option value="Grease Traps">Grease Traps</option>
+                <option value="High Pressure Jetting">High Pressure Jetting</option>
+                <option value="Septic Tank Repair">Septic Tank Repair</option>
+              </select>
+            </div>
+            <div className='flex gap-1 flex-col justify-start w-full'>
+              <label htmlFor="message" className='text-black'>Message</label>
+              <textarea onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" id="message" ></textarea>
+            </div>
+              <input type="submit"  value='Send' className='w-full text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
+          </form>
         </div>
-        <form ref={form} onSubmit={sendEmail} action="" className=' flex justify-center items-center flex-col gap-5 px-4 my-auto w-[50%] max-w-full mx-auto max-sm:w-full max-md:w-full max-lg:w-full'>
-          <div className='flex gap-1 flex-col justify-start w-full max-sm:w-full max-md:w-full max-lg:w-full'>
-            <label htmlFor="name" className=' text-black'>Name</label>
-            <input onChange={e=>setName(e.target.value)} className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' 
-            name='from_name' type="text"  />
-          </div>
-          <div className='flex gap-1 flex-col justify-start w-full'>
-            <label htmlFor="email" className='text-black'>Email</label>
-            <input onChange={e=>setEmail(e.target.value)} name='from_email' className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="email" id="email" />
-          </div>
-          <div className='flex gap-1 flex-col justify-start w-full'>
-            <label htmlFor="phone" className='text-black'>Phone Number</label>
-            <input onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='01111111111' max='99999999999' id="phone" />
-          </div>
-          <div className='flex gap-1 flex-col justify-start w-full'>
-            <label htmlFor="address" className='text-black'>Address</label>
-            <input onChange={e=>setAddress(e.target.value)} name='from_address' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="text" id="address" />
-          </div>
-          <div className='flex gap-1 flex-col justify-start w-full'>
-            <label htmlFor="address" className='text-black'>Service</label>
-            <select name="from_select" id="select" className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1'>
-              <option value="Cleaning and Pumping">Septic Cleaning and Pumping</option>
-              <option value="Installation">Septic Tank Installation</option>
-              <option value="Control Panels">Septic Control Panel</option>
-              <option value="Grease Traps">Grease Traps</option>
-              <option value="High Pressure Jetting">High Pressure Jetting</option>
-              <option value="Septic Tank Repair">Septic Tank Repair</option>
-            </select>
-          </div>
-          <div className='flex gap-1 flex-col justify-start w-full'>
-            <label htmlFor="message" className='text-black'>Message</label>
-            <textarea onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" id="message" ></textarea>
-          </div>
-            <input type="submit"  value='Send' className='w-full text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
-        </form>
       </div>
     </div>
   )

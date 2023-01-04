@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
-const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
+const installations = ({Title, desc1,desc2,step1,step2,step3,step4,step5,desc4}) => {
   const titleAbove = useRef(null);
   const picLeft = useRef(null);
   const description = useRef(null);
@@ -37,7 +37,11 @@ const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
       <div ref={description} className=' flex flex-col justify-start items-start lg:w-6/12 max-sm:w-10/12 max-sm:gap-5 max-md:w-10/12 max-lg:w-10/12 gap-5'>
         <p className=' text-justify w-full text-xl max-sm:text-lg'>{desc1}</p>
         <p className=' text-justify w-full text-xl max-sm:text-lg'>{desc2}</p>
-        <p className=' text-justify w-full text-xl max-sm:text-lg'>{desc3}</p>
+        <p className=' text-justify w-full text-xl max-sm:text-lg'>{step1}</p>
+        <p className=' text-justify w-full text-xl max-sm:text-lg'>{step2}</p>
+        <p className=' text-justify w-full text-xl max-sm:text-lg'>{step3}</p>
+        <p className=' text-justify w-full text-xl max-sm:text-lg'>{step4}</p>
+        <p className=' text-justify w-full text-xl max-sm:text-lg'>{step5}</p>
         <p className=' text-justify w-full text-xl max-sm:text-lg'>{desc4}</p>
       </div>  
     </div>
@@ -45,4 +49,4 @@ const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
   )
 }
 
-export default manualservice
+export default installations
