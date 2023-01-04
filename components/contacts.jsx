@@ -99,7 +99,7 @@ const contacts = () => {
   };
 //<a href="https://www.flaticon.com/free-icons/customer-service" title="customer service icons">Customer service icons created by Freepik - Flaticon</a>
   return (
-    <div className='flex flex-row justify-around'>
+    <div className='flex flex-row justify-around' lang='en'>
       <div ref={contacts} className='w-10/12 bg-white pt-10 pb-5 mt-10 font-custom' id='contacts'>
         <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
           <div className='flex flex-col gap-5 text-center'>
@@ -120,15 +120,15 @@ const contacts = () => {
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="email" className='text-black'>Email</label>
-              <input id='email' onChange={e=>setEmail(e.target.value)} name='from_email' className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="email" id="email" />
+              <input id='email' onChange={e=>setEmail(e.target.value)} name='from_email' className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="email"  />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="phone" className='text-black'>Phone Number</label>
-              <input id='phone' onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='0' max='99999999999' id="phone" />
+              <input id='phone' onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='0' max='99999999999' />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="address" className='text-black'>Address</label>
-              <input id='address' onChange={e=>setAddress(e.target.value)} name='from_address' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="text" id="address" />
+              <input id='address' onChange={e=>setAddress(e.target.value)} name='from_address' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="text"  />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="select" className='text-black'>Service</label>
@@ -143,7 +143,7 @@ const contacts = () => {
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="message" className='text-black'>Message</label>
-              <textarea id='message' onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" id="message" ></textarea>
+              <textarea id='message' onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" ></textarea>
             </div>
               <input type="submit"  value='Send' className='w-full text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
           </form>
