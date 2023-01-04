@@ -33,7 +33,7 @@ const services = () => {
 
   return (
     <>
-    <div className='flex flex-row justify-around'>
+    <div className='flex flex-row justify-around' lang='en'>
       <div className=' bg-white font-custom text-center w-8/12 max-h-full flex flex-col items-center' id='services'>
           <h1 className='text-5xl pt-10 font-lobster' ref={h1Text}>Our Services</h1>
           <div className='flex justify-around items-center gap-5 py-10 max-sm:flex-wrap max-sm:gap-5 max-md:flex-wrap lg:flex-wrap max-lg:flex-wrap max-sm:w-full w-10/12 max-md:w-full'>
@@ -43,7 +43,7 @@ const services = () => {
                   <div className='flex justify-end flex-col items-start'>
                       <h1 className='text-xl font-bold py-1'>{table.title}</h1>
                       <p className='text-justify py-2'>{table.description}</p>
-                      <Link href={table.link} className='rounded-lg transition-all text-white bg-slate-900 hover:bg-slate-700 duration-100 p-1 px-2 '>Learn More</Link>
+                      <Link href={table.link} className='rounded-lg transition-all text-white bg-slate-900 hover:bg-slate-700 duration-100 p-1 px-2 '>Find out more</Link>
                   </div>
               </div>
               ))}
