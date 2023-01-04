@@ -26,10 +26,9 @@ const navbar = () => {
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row justify-between">
         <div className="flex-shrink-0">
-                <Link href="/"><img ref={el => logo = el} src='/images/logolight.png'
+                <Link href="/"> <img ref={el => logo = el} src='/images/logolight.png'
                   className="opacity-0 max-h-16 max-w-24"
-                  
-                  alt="Workflow"
+                  alt="Guzman Logo"
                 /></Link>
           </div>
           <div className="flex items-center justify-center h-16 max-sm:justify-between max-md:justify-between">

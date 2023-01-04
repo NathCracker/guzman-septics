@@ -1,6 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
+import Image from 'next/image'
 import 'react-toastify/dist/ReactToastify.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
@@ -106,7 +107,7 @@ const contacts = () => {
             <h1 className='text-black text-5xl max-sm:text-center font-lobster'>Connect with us</h1>
             <p className='text-black  max-sm:text-center'>Feel free to contact us using this form or by calling our hotline.</p>
             <div className='offer flex justify-center items-center flex-col gap-5'>
-                  <img src="/images/ico/call-center.png" alt="Commercial" className='max-h-28' />
+                  <Image src="/images/ico/call-center.png" alt="Commercial" className='max-h-28' height={112} width={112} />
                   <div className='flex justify-center items-center'><BsFillTelephoneFill className='text-4xl max-sm:text-lg' /><p className='px-2 max-sm:text-lg text-3xl'>+1 281-642-2355</p></div>
                   <h2 className='max-sm:pb-10'>Our customer service is open for 24 hours.</h2>
                   <h1 className='font-lobster text-3xl lg:hidden pb-5'>Contact Form</h1>

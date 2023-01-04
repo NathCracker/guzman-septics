@@ -3,6 +3,7 @@ import {gsap} from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import {IoLocationSharp} from 'react-icons/io5'
 import {Link as Links} from 'react-scroll'
+import Image from 'next/image'
 gsap.registerPlugin(ScrollTrigger);
 const about = () => {
   const title = useRef(null);
@@ -43,12 +44,12 @@ const about = () => {
                   {/*<a href="https://www.flaticon.com/free-icons/residential" title="residential icons">Residential icons created by nawicon - Flaticon</a>
                   <a href="https://www.flaticon.com/free-icons/urban" title="urban icons">Urban icons created by Freepik - Flaticon</a>*/}
 
-                  <img src="/images/ico/house.png" alt="Residential" className='max-h-28' />
+                  <Image src="/images/ico/house.png" alt="Residential" className='max-h-28' height={112} width={112} />
                   <h2>Residential</h2>
                 </div>
 
                 <div className='offer'>
-                  <img src="/images/ico/skyline.png" alt="Commercial" className='max-h-28' />
+                  <Image src="/images/ico/skyline.png" alt="Commercial" className='max-h-28' height={112} width={112} />
                   <h2 className=''>Commercial</h2>
                 </div>
               </div>
