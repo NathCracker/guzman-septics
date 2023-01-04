@@ -115,37 +115,37 @@ const contacts = () => {
           <form ref={form} onSubmit={sendEmail} action="" className=' flex justify-center items-center flex-col gap-5 px-4 my-auto w-[50%] max-w-full mx-auto max-sm:w-full max-md:w-full max-lg:w-full'>
             <div className='flex gap-1 flex-col justify-start w-full max-sm:w-full max-md:w-full max-lg:w-full'>
               <label htmlFor="name" className=' text-black'>Name</label>
-              <input id='name' onChange={e=>setName(e.target.value)} className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' 
+              <input aria-label='Name' id='name' onChange={e=>setName(e.target.value)} className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' 
               name='from_name' type="text"  />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="email" className='text-black'>Email</label>
-              <input id='email' onChange={e=>setEmail(e.target.value)} name='from_email' className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="email"  />
+              <input aria-label='Email' id='email' onChange={e=>setEmail(e.target.value)} name='from_email' className='border border-slate-900  w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="email"  />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="phone" className='text-black'>Phone Number</label>
-              <input id='phone' onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='0' max='99999999999' />
+              <input aria-label='Phone Number' id='phone' onChange={e=>setphoneNumber(e.target.value)} name='from_phone' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="number" min='0' max='99999999999' />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="address" className='text-black'>Address</label>
-              <input id='address' onChange={e=>setAddress(e.target.value)} name='from_address' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="text"  />
+              <input aria-label='Address' id='address' onChange={e=>setAddress(e.target.value)} name='from_address' className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1' type="text"  />
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="select" className='text-black'>Service</label>
               <select name="from_select" id="select" className='border border-slate-900 w-full rounded-sm focus:outline-none focus:border-teal-500 py-1'>
-                <option value="Cleaning and Pumping">Septic Cleaning and Pumping</option>
-                <option value="Installation">Septic Tank Installation</option>
-                <option value="Control Panels">Septic Control Panel</option>
-                <option value="Grease Traps">Grease Traps</option>
-                <option value="High Pressure Jetting">High Pressure Jetting</option>
-                <option value="Septic Tank Repair">Septic Tank Repair</option>
+                <option aria-label='Septic Cleaning and Pumping' value="Cleaning and Pumping">Septic Cleaning and Pumping</option>
+                <option aria-label='Septic Tank Installation' value="Installation">Septic Tank Installation</option>
+                <option aria-label='Septic Control Panel' value="Control Panels">Septic Control Panel</option>
+                <option aria-label='Grease Traps' value="Grease Traps">Grease Traps</option>
+                <option aria-label='High Pressure Jetting' value="High Pressure Jetting">High Pressure Jetting</option>
+                <option aria-label='Septic Tank Repair' value="Septic Tank Repair">Septic Tank Repair</option>
               </select>
             </div>
             <div className='flex gap-1 flex-col justify-start w-full'>
               <label htmlFor="message" className='text-black'>Message</label>
-              <textarea id='message' onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" ></textarea>
+              <textarea aria-label='Message' id='message' onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" ></textarea>
             </div>
-              <input type="submit"  value='Send' className='w-full text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
+              <input aria-label='Submit' type="submit"  value='Send' className='w-full text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
           </form>
         </div>
       </div>
