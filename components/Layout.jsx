@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth' lang='en'>
         <Hotline/>
         <Navbar/>
         { children }

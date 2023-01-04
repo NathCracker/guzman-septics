@@ -18,8 +18,8 @@ const footer = () => {
     <div className='flex justify-center items-center flex-col gap-5'>
       <h1 className=' text-white text-2xl font-lobster'>Follow our Social Media</h1>
       <div className='flex flex-row gap-10'>
-        <a href="https://www.facebook.com/Guzmanseptic/" target='_blank'><BsFacebook className='text-white text-3xl' /></a>  
-        <a href="https://www.instagram.com/guzmansepticservices/?hl=en" target='_blank'><BsInstagram className='text-white text-3xl' /></a>
+        <a href="https://www.facebook.com/Guzmanseptic/" target='_blank' aria-label="Read more about our services in our facebook page."><BsFacebook className='text-white text-3xl' /></a>  
+        <a href="https://www.instagram.com/guzmansepticservices/?hl=en" target='_blank' aria-label="Read more about our services in our instagram page."><BsInstagram className='text-white text-3xl' /></a>
       </div>
     </div>
   </div>
