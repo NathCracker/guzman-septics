@@ -26,7 +26,7 @@ const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
     <>
     <div className='font-lobster tracking-widest' lang='en'>
     <div className='max-w-full min-h-screen flex items-center justify-center bg-gradient-to-tl  from-black to-gray-500'>
-      <div className='w-full h-full object-cover absolute mix-blend-overlay bg-fixed bg-cover' alt="Picture of our trucks" ><Image src="/images/SepticCleaning.jpg" alt="Picture of our trucks" fill /></div>
+      <div className='w-full h-full object-cover absolute mix-blend-overlay bg-fixed bg-cover' alt="Picture of our trucks" ><Image src="/images/SepticCleaning.jpg" alt="Picture of our trucks" fill objectFit='cover' /></div>
       <h1 className=' max-sm:text-4xl max-sm:text-center text-5xl text-white'>{Title}</h1>
     </div>
   </div>

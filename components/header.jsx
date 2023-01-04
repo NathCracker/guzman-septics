@@ -14,7 +14,7 @@ const header = () => {
   return (
     <div className=' text-center font-lobster tracking-widest' lang='en'>
       <div className='max-w-full min-h-screen flex items-center justify-center '>
-        <div className='w-full h-full object-cover absolute bg-fixed bg-cover brightness-50' alt="Picture of our trucks" ><Image src="/images/guzmansepticbackground.jpg" alt="" fill /></div>
+        <div className='w-full h-full object-cover absolute bg-fixed bg-cover brightness-50' alt="Picture of our trucks" ><Image src="/images/guzmansepticbackground.jpg" alt="" fill objectFit='cover' /></div>
         <h1 ref={headering} className=' font-thin opacity-0 max-sm:text-center max-md:text-center text-5xl text-white'>Best Septic Service in Houston, Texas</h1>
       </div>
     </div>
