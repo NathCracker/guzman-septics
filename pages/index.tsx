@@ -10,8 +10,8 @@ export default function Home(){
     <>
     <Head>
       <title>Guzman Septic - Your Trusted Septic Partner</title>
-      <meta name="description" content="The best septic service in houston"/>
-      <meta name="keywords" content="Septic, septic, septic,services, houston septic services, septic services in houston, best septic service"/>
+      <meta name="description" content="The Best septic Service in Houston"/>
+      <meta name="keywords" content="Septic, septic, septic services, Houston septic services, septic services in houston, best septic service, Austin, San Antonio"/>
       <meta name="author" content="Guzman Septics"/>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
