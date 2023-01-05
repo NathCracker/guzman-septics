@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
-const installations = ({Title, desc1,desc2,step1,step2,step3,step4,step5,desc4}) => {
+const installations = ({Title, desc1,desc2,step1,step2,step3,step4,step5,desc4, fImage}) => {
   const titleAbove = useRef(null);
   const picLeft = useRef(null);
   const description = useRef(null);
@@ -32,7 +32,7 @@ const installations = ({Title, desc1,desc2,step1,step2,step3,step4,step5,desc4})
     <div id='services' className='font-custom flex flex-col text-center justify-center items-center gap-10 max-sm:flex-col max-md:flex-col max-lg:flex-col'>
       <div className=' flex flex-col w-4/12 items-center justify-start max-sm:w-10/12 max-md:w-10/12 max-lg:w-10/12 lg:w-5/12'>
         <h1 ref={titleAbove} className=' font-lobster py-5 text-3xl max-sm:text-2xl'>{Title}</h1>
-        <img ref={picLeft} className='px-3 max-sm:w-full max-sm:h-full max-md:h-full max-md:w-full max-lg:h-full max-lg:w-full w-full h-full' src="/images/septictanks.jpg" alt="" />
+        <img ref={picLeft} className='px-3 max-sm:w-full max-sm:h-full max-md:h-full max-md:w-full max-lg:h-full max-lg:w-full w-full h-full' src={fImage} alt="" />
       </div>
       <div ref={description} className=' flex flex-col justify-start items-start lg:w-6/12 max-sm:w-10/12 max-sm:gap-5 max-md:w-10/12 max-lg:w-10/12 gap-5'>
         <p className=' text-justify w-full text-xl max-sm:text-lg'>{desc1}</p>
