@@ -18,7 +18,7 @@ const manualservice = ({Title, desc1,desc2,desc3,desc4,fImage}) => {
     gsap.fromTo(el1, {y:100, opacity:0}, {y:0, opacity:1, delay:0.3, scrollTrigger:{
       trigger: el1
     }})
-    gsap.fromTo(el2, {x:50, opacity:0}, {x:0, opacity:1, delay:0.3, scrollTrigger:{
+    gsap.fromTo(el2, {x:25, opacity:0}, {x:0, opacity:1, delay:0.3, scrollTrigger:{
       trigger: el2
     }})
   })

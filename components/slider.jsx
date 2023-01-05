@@ -16,7 +16,7 @@ const slider = () => {
   })
   return (
     <div className='flex flex-col items-center lg:hidden'>
-        <h1 className='text-center text-3xl py-5'>GALLERY</h1>
+        <h1 className='font-lobster text-center text-3xl py-5'>GALLERY</h1>
         <div className="slide-container w-11/12" ref={slideria}>
         <Slide >
          {images.map((slideimages, index)=> (
