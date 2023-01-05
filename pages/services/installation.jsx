@@ -4,9 +4,17 @@ import Contacts from '../../components/contacts'
 import Installations from '../../components/installations'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
+import Head from 'next/head'
 const installation = () => {
   return (
     <>
+    <Head>
+      <title>Guzman Septic - Your Trusted Septic Tank Installation Partner</title>
+      <meta name="description" content="Ensure proper wastewater treatment for your property with septic installation from Septic Service Company. Our team of experienced technicians will handle every step of the installation process, from planning and design to excavation, tank installation, and drain field installation. Contact us today to learn more about our septic installation services."/>
+      <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
+      <meta name="author" content="Guzman Septics"/>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Installations Title='The Best Septic Tank Installation' 
     desc1="Septic tank installation is the process of installing a septic tank on a property for the purpose of collecting and storing wastewater. A septic tank is a buried, water-tight container that is used to store wastewater from a home or business. It is designed to allow solids to settle to the bottom, while liquids and gases flow out to the drain field."
     desc2="There are several benefits to using a septic tank for wastewater treatment:"

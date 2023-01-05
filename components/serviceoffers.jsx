@@ -33,6 +33,6 @@ export default[
         url: '/images/image5.jpg',
         title: 'Septic Tank Repair',
         description: 'Troubleshooting, Drain Field Malfunction Repairs, Septic Baffle Replacements.',
-        link: '/services/pumping'  
+        link: '/services/repair'  
     }
 ]   
