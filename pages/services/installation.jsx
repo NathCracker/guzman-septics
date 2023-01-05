@@ -15,7 +15,8 @@ const installation = () => {
     step3="Decentralized wastewater treatment: Septic tanks allow for decentralized wastewater treatment, which means that the treatment of wastewater can be done on the property where it is generated, rather than relying on a central treatment facility. This can be more efficient and less costly."
     step4="Water conservation: Septic tanks can help to conserve water, as they recycle greywater (used water from sinks, showers, and washing machines) for reuse in irrigation and other non-potable uses."
     step5="Reduced reliance on municipal sewer systems: Septic tanks can reduce reliance on municipal sewer systems, which can be overloaded or strained in areas with high population densities. This can help to prevent sewage overflows and other problems."
-    desc4="Septic tank installation is a complex process that requires specialized knowledge and equipment. It is typically best to hire a professional septic service company to handle the installation, as they will have the experience and expertise to ensure that the job is done correctly." />
+    desc4="Septic tank installation is a complex process that requires specialized knowledge and equipment. It is typically best to hire a professional septic service company to handle the installation, as they will have the experience and expertise to ensure that the job is done correctly."
+    fImage="/images/installation.jpg" />
     <Gallery />
     <Slider/>
    <About/>

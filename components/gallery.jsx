@@ -18,7 +18,7 @@ const gallery = () => {
   return (
 
   <div ref={galleria} className='flex flex-col max-sm:flex-col max-md:flex-col max-sm:hidden max-md:hidden max-lg:hidden mb-10'>
-    <h1 className='text-black text-3xl text-center py-10 font-lobster'>Gallery</h1>
+    <h1 className=' font-lobster text-black text-3xl text-center py-10'>Gallery</h1>
     <div className='flex flex-col justify-center items-center max-h-full'>
         <img className='w-auto h-[500px] object-scale-down border-2 border-black' src={selectedImage.url} alt="" />
         <div className='flex flex-wrap flex-row justify-center items-center '>

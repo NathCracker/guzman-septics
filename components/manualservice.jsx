@@ -3,7 +3,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Image from 'next/image'
 gsap.registerPlugin(ScrollTrigger);
-const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
+const manualservice = ({Title, desc1,desc2,desc3,desc4,fImage}) => {
   const titleAbove = useRef(null);
   const picLeft = useRef(null);
   const description = useRef(null);
@@ -18,7 +18,7 @@ const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
     gsap.fromTo(el1, {y:100, opacity:0}, {y:0, opacity:1, delay:0.3, scrollTrigger:{
       trigger: el1
     }})
-    gsap.fromTo(el2, {x:100, opacity:0}, {x:0, opacity:1, delay:0.3, scrollTrigger:{
+    gsap.fromTo(el2, {x:50, opacity:0}, {x:0, opacity:1, delay:0.3, scrollTrigger:{
       trigger: el2
     }})
   })
@@ -33,7 +33,7 @@ const manualservice = ({Title, desc1,desc2,desc3,desc4}) => {
     <div id='services' className='font-custom flex flex-col text-center justify-center items-center gap-10 max-sm:flex-col max-md:flex-col max-lg:flex-col'>
       <div className=' flex flex-col w-4/12 items-center justify-start max-sm:w-10/12 max-md:w-10/12 max-lg:w-10/12 lg:w-5/12'>
         <h1 ref={titleAbove} className=' font-lobster py-5 text-3xl max-sm:text-2xl'>{Title}</h1>
-        <Image ref={picLeft} className='px-3 max-sm:w-full max-sm:h-full max-md:h-full max-md:w-full max-lg:h-full max-lg:w-full w-full h-full' src="/images/septictanks.jpg" alt="" height={341.578} width={607.250} />
+        <Image ref={picLeft} className='px-3 max-sm:w-full max-sm:h-full max-md:h-full max-md:w-full max-lg:h-full max-lg:w-full w-full h-full' src={fImage} alt="" height={341.578} width={607.250} />
       </div>
       <div ref={description} className=' flex flex-col justify-start items-start lg:w-6/12 max-sm:w-10/12 max-sm:gap-5 max-md:w-10/12 max-lg:w-10/12 gap-5'>
         <p className=' text-justify w-full text-xl max-sm:text-lg'>{desc1}</p>

@@ -7,11 +7,12 @@ import Slider from '../../components/slider'
 const pumping = () => {
   return (
     <>
-    <Manualservice Title='The Best Septic Tank Pumping Service'
-    desc1="Septic tank pumping, also known as septic cleaning, is the process of removing solids and other accumulated debris from a septic tank. It is an important part of maintaining a septic system and preventing it from malfunctioning."
-    desc2="A septic tank is a buried, water-tight container that stores wastewater from a home or business. The tank is designed to allow solids to settle to the bottom, while liquids and gases flow out to the drain field. Over time, however, solids can build up in the tank, reducing its efficiency and potentially causing it to overflow or fail."
-    desc3="Septic tank pumping involves using a specialized truck to pump out the solids and liquids from the septic tank. The process typically takes a few hours to complete, and the tank should be pumped every three to five years, depending on its size and the amount of wastewater it receives."
-    desc4="Pumping a septic tank can help prevent costly repairs and extend the life of the system. It is also important for maintaining proper functioning of the septic system and protecting the environment by preventing sewage overflow. If you are unsure of when your septic tank was last pumped or if it needs to be pumped, it is a good idea to have a professional septic service company assess your system."  />
+    <Manualservice Title='The Best Septic Tank Repair Services'
+    desc1="Septic tank repair is the process of fixing or repairing a septic tank that is damaged or not functioning properly. A septic tank is a buried, water-tight container that stores wastewater from a home or business. It is designed to allow solids to settle to the bottom, while liquids and gases flow out to the drain field."
+    desc2="Septic tank repair may be necessary for a variety of reasons, including damage to the tank due to age or corrosion, blockages or leaks in the tank or drain field, or problems with the pump or other components of the system."
+    desc3="Septic tank repair typically involves identifying the cause of the problem and then taking the necessary steps to fix it. This may involve repairing or replacing damaged parts of the tank, cleaning out blockages, or fixing leaks."
+    desc4="Septic tank repair is an important part of maintaining a septic system and ensuring that it is functioning properly. If you suspect that you have a problem with your septic tank, it is important to have it assessed and repaired as soon as possible to prevent further damage and costly repairs." 
+    fImage="/images/images8.jpg" />
     <Gallery />
     <Slider/>
    <About/>

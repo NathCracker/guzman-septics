@@ -27,7 +27,7 @@ const navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row justify-between">
         <div className="flex-shrink-0">
                 <Link href="/"> <img ref={el => logo = el} src='/images/logolight.png'
-                  className="opacity-0 max-h-16 max-w-24" width='96' height='64'
+                  className="opacity-0 max-h-16 max-w-24" width='136' height='64'
                   alt="Guzman Logo"
                 /></Link>
           </div>
