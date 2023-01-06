@@ -5,6 +5,7 @@ import Manualservice from '../../components/manualservice'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
 import Head from 'next/head'
+import { ToastContainer } from 'react-toastify'
 const highpressurejetting = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const highpressurejetting = () => {
     <Slider/>
    <About/>
    <Contacts/>
+   
     </>
   )
 }

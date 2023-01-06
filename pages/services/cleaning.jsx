@@ -4,6 +4,7 @@ import Contacts from '../../components/contacts'
 import Slider from '../../components/slider'
 import Gallery from '../../components/gallery'
 import Manualservice from '../../components/manualservice'
+import { ToastContainer } from 'react-toastify'
 import Head from 'next/head'
 const Cleaning = () => {
   return (
@@ -26,6 +27,7 @@ const Cleaning = () => {
     <Slider/>
    <About/>
    <Contacts/>
+   
    </>
   )
 }

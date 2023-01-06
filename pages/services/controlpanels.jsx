@@ -4,6 +4,7 @@ import Contacts from '../../components/contacts'
 import Manualservice from '../../components/manualservice'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
+import { ToastContainer } from 'react-toastify'
 import Head from 'next/head'
 const controlpanels = () => {
   return (
@@ -25,6 +26,7 @@ const controlpanels = () => {
     <Slider/>
    <About/>
    <Contacts/>
+   
    </>
   )
 }

@@ -5,6 +5,7 @@ import Installations from '../../components/installations'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
 import Head from 'next/head'
+import { ToastContainer } from 'react-toastify'
 const installation = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const installation = () => {
     <Slider/>
    <About/>
    <Contacts/>
+   
    </>
   )
 }
