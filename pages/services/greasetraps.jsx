@@ -4,13 +4,13 @@ import Contacts from '../../components/contacts'
 import Manualservice from '../../components/manualservice'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
-import { ToastContainer } from 'react-toastify'
 import Head from 'next/head'
+
 const greasetraps = () => {
   return (
     <>
     <Head>
-      <title>Guzman Septic - Your Trusted Septic Grease Traps Partner</title>
+      <title>Guzman Septic - Your Trusted Septic Partner</title>
       <meta name="description" content="Keep your plumbing system running smoothly with a grease trap from Septic Service Company. Our grease traps are designed to prevent grease, oils, and other fatty substances from entering your sewage system, helping to prevent blockages and other problems. Contact us today to learn more about our grease trap services."/>
       <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
       <meta name="author" content="Guzman Septics"/>
@@ -26,7 +26,6 @@ const greasetraps = () => {
     <Slider/>
    <About/>
    <Contacts/>
-   
     </>
   )
 }

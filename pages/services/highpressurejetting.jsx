@@ -5,12 +5,12 @@ import Manualservice from '../../components/manualservice'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
 import Head from 'next/head'
-import { ToastContainer } from 'react-toastify'
+
 const highpressurejetting = () => {
   return (
     <>
     <Head>
-      <title>Guzman Septic - Your Trusted Septic Grease Traps Partner</title>
+      <title>Guzman Septic - Your Trusted Septic Partner</title>
       <meta name="description" content="Efficiently clear blocked pipes with high pressure jetting from Septic Service Company. Our team uses specialized equipment to generate high pressure water jets that effectively break up and remove even the most stubborn blockages. Contact us today to learn more about our high pressure jetting services."/>
       <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
       <meta name="author" content="Guzman Septics"/>
@@ -26,7 +26,6 @@ const highpressurejetting = () => {
     <Slider/>
    <About/>
    <Contacts/>
-   
     </>
   )
 }

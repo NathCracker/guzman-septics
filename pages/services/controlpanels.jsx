@@ -4,13 +4,13 @@ import Contacts from '../../components/contacts'
 import Manualservice from '../../components/manualservice'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
-import { ToastContainer } from 'react-toastify'
 import Head from 'next/head'
+
 const controlpanels = () => {
   return (
     <>
     <Head>
-      <title>Guzman Septic - Your Trusted Septic Control Panels Partner</title>
+      <title>Guzman Septic - Your Trusted Septic Partner</title>
       <meta name="description" content="Ensure the proper functioning of your septic system with a septic control panel from Septic Service Company. Our control panels are designed to monitor the level of wastewater in your septic tank and control the pumps and other components of your system. Contact us today to learn more about our septic control panels"/>
       <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
       <meta name="author" content="Guzman Septics"/>
@@ -26,7 +26,6 @@ const controlpanels = () => {
     <Slider/>
    <About/>
    <Contacts/>
-   
    </>
   )
 }

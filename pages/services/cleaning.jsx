@@ -4,13 +4,13 @@ import Contacts from '../../components/contacts'
 import Slider from '../../components/slider'
 import Gallery from '../../components/gallery'
 import Manualservice from '../../components/manualservice'
-import { ToastContainer } from 'react-toastify'
 import Head from 'next/head'
+
 const Cleaning = () => {
   return (
    <>
     <Head>
-      <title>Guzman Septic - Your Trusted Septic Cleaning Partner</title>
+      <title>Guzman Septic - Your Trusted Septic Partner</title>
       <meta name="description" content="Keep your septic system running smoothly with regular cleaning from Septic Service Company. Our team of experienced technicians uses the latest equipment and techniques to effectively remove solids and other accumulated debris from your septic tank. Contact us today to schedule your septic cleaning."/>
       <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
       <meta name="author" content="Guzman Septics"/>
@@ -27,7 +27,6 @@ const Cleaning = () => {
     <Slider/>
    <About/>
    <Contacts/>
-   
    </>
   )
 }

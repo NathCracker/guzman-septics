@@ -5,12 +5,12 @@ import Manualservice from '../../components/manualservice'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
 import Head from 'next/head'
-import { ToastContainer } from 'react-toastify'
+
 const repair = () => {
   return (
     <>
     <Head>
-      <title>Guzman Septic - Your Trusted Septic Repair Partner</title>
+      <title>Guzman Septic - Your Trusted Septic Partner</title>
       <meta name="description" content="Keep your septic system functioning properly with septic repair from Septic Service Company. Our team of experienced technicians will quickly diagnose and fix any problems with your septic tank, helping to prevent further damage and costly repairs. Contact us today to schedule your septic repair."/>
       <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
       <meta name="author" content="Guzman Septics"/>
@@ -26,7 +26,6 @@ const repair = () => {
     <Slider/>
    <About/>
    <Contacts/>
-   
     </>
   )
 }

@@ -5,12 +5,12 @@ import Installations from '../../components/installations'
 import Gallery from '../../components/gallery'
 import Slider from '../../components/slider'
 import Head from 'next/head'
-import { ToastContainer } from 'react-toastify'
+
 const installation = () => {
   return (
     <>
     <Head>
-      <title>Guzman Septic - Your Trusted Septic Tank Installation Partner</title>
+      <title>Guzman Septic - Your Trusted Septic Partner</title>
       <meta name="description" content="Ensure proper wastewater treatment for your property with septic installation from Septic Service Company. Our team of experienced technicians will handle every step of the installation process, from planning and design to excavation, tank installation, and drain field installation. Contact us today to learn more about our septic installation services."/>
       <meta name="keywords" content="Septic service, Septic tank, Septic installation, Septic repair, Septic maintenance, Septic inspection, Septic cleaning, Septic pumping, Septic system, Septic tank repair, Septic tank maintenance, Septic tank installation, Septic tank pumping, Septic drain field, Septic control panel, Grease trap, High pressure jetting"/>
       <meta name="author" content="Guzman Septics"/>
@@ -30,7 +30,6 @@ const installation = () => {
     <Slider/>
    <About/>
    <Contacts/>
-   
    </>
   )
 }
